@@ -1,0 +1,96 @@
+/* ===========================================
+   ADMIN ADD LINK PAGE
+   =========================================== */
+
+.admin-page {
+    min-height: calc(100vh - var(--header-height));
+    padding: var(--space-xl);
+    background: var(--color-bg);
+}
+
+.admin-page-loading,
+.admin-page-unauthorized {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - var(--header-height));
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+}
+
+.admin-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.admin-title {
+    margin: 0 0 var(--space-xl);
+    font-size: var(--text-2xl);
+    color: var(--color-gray-900);
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-group label {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    color: var(--color-gray-700);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-base);
+    border: var(--border-thin);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.form-message {
+    margin: 0;
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-sm);
+    border-radius: var(--radius-md);
+}
+
+.form-message.success {
+    color: oklch(40% 0.15 145);
+    background: oklch(95% 0.05 145);
+}
+
+.form-message.error {
+    color: oklch(40% 0.2 25);
+    background: oklch(95% 0.05 25);
+}

@@ -1,0 +1,178 @@
+/* ===========================================
+   HEADER — EduPlatform
+   =========================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 80px;
+    /* Increased from 64px */
+    background: var(--color-surface);
+    border-bottom: var(--border-thin);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: var(--space-lg);
+    max-width: 1400px;
+    /* Increased from 1200px to give more room */
+    margin: 0 auto;
+}
+
+/* Logo - only EP badge rotates */
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: var(--text-base);
+    font-weight: var(--weight-bold);
+    color: var(--color-text-inverse);
+    background: var(--color-primary);
+    border-radius: var(--radius-sm);
+    transition: transform var(--transition-base);
+}
+
+/* Only EP badge rotates 30deg on hover */
+.header-logo:hover .logo-badge {
+    transform: rotate(30deg);
+}
+
+.logo-text {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    color: var(--color-gray-900);
+}
+
+/* Navigation with :has() selector */
+.header-nav {
+    display: none;
+    flex-grow: 1;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    list-style: none;
+    transition: gap var(--transition-base);
+    white-space: nowrap;
+}
+
+.nav-link {
+    display: inline-block;
+    font-size: 1.05rem;
+    /* Slightly smaller than text-lg for space */
+    font-weight: var(--weight-bold);
+    color: var(--color-gray-700);
+    padding: var(--space-sm) var(--space-lg);
+    /* Reduced padding */
+    border-radius: var(--radius-lg);
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+/* Color Inversion on Hover */
+.nav-link:hover {
+    color: white;
+    background: var(--color-primary);
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 20px oklch(65% 0.28 345 / 0.2);
+    border-color: var(--color-primary);
+}
+
+/* Using :has() to affect siblings when one is hovered */
+/* 1. Reduce opacity and scale of the whole list when any link is hovered */
+.nav-list:has(.nav-link:hover) .nav-link:not(:hover) {
+    opacity: 0.2;
+    transform: scale(0.95);
+    filter: blur(0.5px);
+}
+
+/* Increase gap slightly when interactive */
+.nav-list:has(.nav-link:hover) {
+    gap: var(--space-md);
+}
+
+/* Actions */
+.header-actions {
+    display: none;
+}
+
+.header-actions .btn-icon {
+    font-size: 1rem;
+}
+
+/* Mobile toggle */
+.mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color-gray-600);
+    border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+    .header-nav {
+        display: block;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .lang-toggle-btn {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--color-gray-600);
+        padding: 0.4rem 0.8rem;
+        border-radius: var(--radius-sm);
+        font-size: var(--text-sm);
+        font-weight: var(--weight-semibold);
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        text-transform: uppercase;
+    }
+
+    .lang-toggle-btn:hover {
+        background: rgba(255, 255, 255, 0.12);
+        border-color: var(--color-primary);
+        color: var(--color-gray-900);
+        transform: translateY(-1px);
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}

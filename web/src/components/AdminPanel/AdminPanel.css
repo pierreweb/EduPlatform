@@ -1,0 +1,92 @@
+/* ===========================================
+   ADMIN PANEL
+   =========================================== */
+
+.admin-panel {
+    margin-top: var(--space-xl);
+    padding: var(--space-lg);
+    background: linear-gradient(135deg,
+            oklch(65% 0.28 345 / 0.05) 0%,
+            oklch(65% 0.28 345 / 0.1) 100%);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+}
+
+.admin-panel-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin: 0 0 var(--space-md);
+    font-size: var(--text-lg);
+    color: var(--color-primary-dark);
+}
+
+.admin-icon {
+    font-size: var(--text-xl);
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-input {
+    flex: 1;
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-base);
+    border: var(--border-thin);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    transition: border-color var(--transition-fast);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-input::placeholder {
+    color: var(--color-text-light);
+}
+
+.form-message {
+    margin: var(--space-xs) 0 0;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: var(--text-sm);
+    border-radius: var(--radius-sm);
+}
+
+.form-message.success {
+    color: oklch(45% 0.15 145);
+    background: oklch(95% 0.05 145);
+}
+
+.form-message.error {
+    color: oklch(45% 0.2 25);
+    background: oklch(95% 0.05 25);
+}
+
+@media (min-width: 768px) {
+    .admin-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .form-row:first-child {
+        flex: 2;
+    }
+
+    .form-row:nth-child(2) {
+        flex: 1;
+    }
+
+    .form-row:last-of-type {
+        flex: none;
+    }
+}

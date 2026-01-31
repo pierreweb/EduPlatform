@@ -1,0 +1,29 @@
+api-1  | 
+api-1  | > eduproject-server@1.0.0 dev
+api-1  | > nodemon --exec ts-node src/index.ts
+api-1  | 
+api-1  | [33m[nodemon] 3.1.11[39m
+api-1  | [33m[nodemon] to restart at any time, enter `rs`[39m
+api-1  | [33m[nodemon] watching path(s): *.*[39m
+api-1  | [33m[nodemon] watching extensions: ts,json[39m
+api-1  | [32m[nodemon] starting `ts-node src/index.ts`[39m
+api-1  | /app/node_modules/ts-node/src/index.ts:859
+api-1  |     return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+api-1  |            ^
+api-1  | TSError: Ô¿» Unable to compile TypeScript:
+api-1  | src/middleware/security.ts(1,20): error TS2307: Cannot find module 'helmet' or its corresponding type declarations.
+api-1  | src/middleware/security.ts(2,23): error TS2307: Cannot find module 'express-rate-limit' or its corresponding type declarations.
+api-1  | 
+api-1  |     at createTSError (/app/node_modules/ts-node/src/index.ts:859:12)
+api-1  |     at reportTSError (/app/node_modules/ts-node/src/index.ts:863:19)
+api-1  |     at getOutput (/app/node_modules/ts-node/src/index.ts:1077:36)
+api-1  |     at Object.compile (/app/node_modules/ts-node/src/index.ts:1433:41)
+api-1  |     at Module.m._compile (/app/node_modules/ts-node/src/index.ts:1617:30)
+api-1  |     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+api-1  |     at Object.require.extensions.<computed> [as .ts] (/app/node_modules/ts-node/src/index.ts:1621:12)
+api-1  |     at Module.load (node:internal/modules/cjs/loader:1266:32)
+api-1  |     at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+api-1  |     at Module.require (node:internal/modules/cjs/loader:1289:19) {
+api-1  |   diagnosticCodes: [ 2307, 2307 ]
+api-1  | }
+api-1  | [31m[nodemon] app crashed - waiting for file changes before starting...[39m

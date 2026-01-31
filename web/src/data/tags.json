@@ -1,0 +1,779 @@
+{
+    "categories": [
+        {
+            "id": "electronics",
+            "fr": "Électronique",
+            "en": "Electronics"
+        },
+        {
+            "id": "robotics",
+            "fr": "Robotique",
+            "en": "Robotics"
+        },
+        {
+            "id": "programming",
+            "fr": "Programmation",
+            "en": "Programming"
+        },
+        {
+            "id": "3d",
+            "fr": "Création 3D",
+            "en": "3D Creation"
+        },
+        {
+            "id": "technologies",
+            "fr": "Technologie",
+            "en": "Technology"
+        },
+        {
+            "id": "physics",
+            "fr": "Physique",
+            "en": "Physics"
+        },
+        {
+            "id": "biology",
+            "fr": "Biologie",
+            "en": "Biology"
+        },
+        {
+            "id": "ai_art",
+            "fr": "AI Art",
+            "en": "AI Art"
+        },
+        {
+            "id": "languages",
+            "fr": "Langues",
+            "en": "Languages"
+        },
+        {
+            "id": "management",
+            "fr": "Management",
+            "en": "Management"
+        },
+        {
+            "id": "history",
+            "fr": "Histoire",
+            "en": "History"
+        },
+        {
+            "id": "geography",
+            "fr": "Géographie",
+            "en": "Geography"
+        },
+        {
+            "id": "math",
+            "fr": "Mathématiques",
+            "en": "Mathematics"
+        },
+        {
+            "id": "chemistry",
+            "fr": "Chimie",
+            "en": "Chemistry"
+        },
+        {
+            "id": "earth_life_sciences",
+            "fr": "Sciences de la Terre et du Vivant",
+            "en": "Earth and Life Sciences"
+        },
+        {
+            "id": "history_geography",
+            "fr": "Histoire et Géographie",
+            "en": "History and Geography"
+        },
+        {
+            "id": "useful_resources",
+            "fr": "Ressources utiles",
+            "en": "Useful Resources"
+        }
+    ],
+    "tags": [
+        {
+            "id": "iot",
+            "fr": "IoT (Internet des Objets)",
+            "en": "IoT (Internet of Things)"
+        },
+        {
+            "id": "semiconductors",
+            "fr": "Semi-conducteurs",
+            "en": "Semi-conductors"
+        },
+        {
+            "id": "wireless",
+            "fr": "Wireless",
+            "en": "Wireless"
+        },
+        {
+            "id": "5g",
+            "fr": "5G",
+            "en": "5G"
+        },
+        {
+            "id": "telecoms",
+            "fr": "Télécoms",
+            "en": "Telecoms"
+        },
+        {
+            "id": "humanoids",
+            "fr": "Humanoïdes",
+            "en": "Humanoids"
+        },
+        {
+            "id": "ros2",
+            "fr": "ROS2",
+            "en": "ROS2"
+        },
+        {
+            "id": "rust",
+            "fr": "Rust",
+            "en": "Rust"
+        },
+        {
+            "id": "python",
+            "fr": "Python",
+            "en": "Python"
+        },
+        {
+            "id": "html",
+            "fr": "HTML",
+            "en": "HTML"
+        },
+        {
+            "id": "css",
+            "fr": "CSS",
+            "en": "CSS"
+        },
+        {
+            "id": "javascript",
+            "fr": "JavaScript",
+            "en": "JavaScript"
+        },
+        {
+            "id": "typescript",
+            "fr": "TypeScript",
+            "en": "TypeScript"
+        },
+        {
+            "id": "c_lang",
+            "fr": "C",
+            "en": "C"
+        },
+        {
+            "id": "ai",
+            "fr": "IA",
+            "en": "AI"
+        },
+        {
+            "id": "blender",
+            "fr": "Blender",
+            "en": "Blender"
+        },
+        {
+            "id": "unreal_engine",
+            "fr": "Unreal Engine",
+            "en": "Unreal Engine"
+        },
+        {
+            "id": "unity3d",
+            "fr": "Unity3D",
+            "en": "Unity3D"
+        },
+        {
+            "id": "godot",
+            "fr": "Godot",
+            "en": "Godot"
+        },
+        {
+            "id": "3d_ai",
+            "fr": "3D AI",
+            "en": "3D AI"
+        },
+        {
+            "id": "mechanics",
+            "fr": "Mécanique",
+            "en": "Mechanics"
+        },
+        {
+            "id": "boats",
+            "fr": "Bateaux",
+            "en": "Boats"
+        },
+        {
+            "id": "aviation",
+            "fr": "Aviation",
+            "en": "Aviation"
+        },
+        {
+            "id": "automobile",
+            "fr": "Automobile",
+            "en": "Automobile"
+        },
+        {
+            "id": "rockets",
+            "fr": "Fusées",
+            "en": "Rockets"
+        },
+        {
+            "id": "satellites",
+            "fr": "Satellites",
+            "en": "Satellites"
+        },
+        {
+            "id": "space_exploration",
+            "fr": "Exploration spatiale",
+            "en": "Space Exploration"
+        },
+        {
+            "id": "waves",
+            "fr": "Ondes",
+            "en": "Waves"
+        },
+        {
+            "id": "thermodynamics",
+            "fr": "Thermodynamique",
+            "en": "Thermodynamics"
+        },
+        {
+            "id": "science_history",
+            "fr": "Histoire des sciences",
+            "en": "History of Science"
+        },
+        {
+            "id": "quantum_physics",
+            "fr": "Physique quantique",
+            "en": "Quantum Physics"
+        },
+        {
+            "id": "relativity",
+            "fr": "Relativité",
+            "en": "Relativity"
+        },
+        {
+            "id": "biology_cell",
+            "fr": "Biologie cellulaire",
+            "en": "Cell Biology"
+        },
+        {
+            "id": "medicine",
+            "fr": "Médecine",
+            "en": "Medicine"
+        },
+        {
+            "id": "health",
+            "fr": "Santé",
+            "en": "Health"
+        },
+        {
+            "id": "image_gen",
+            "fr": "Génération d'images",
+            "en": "Image Generation"
+        },
+        {
+            "id": "video_ai",
+            "fr": "Vidéo par IA",
+            "en": "Video AI"
+        },
+        {
+            "id": "comfyui",
+            "fr": "ComfyUI",
+            "en": "ComfyUI"
+        },
+        {
+            "id": "english",
+            "fr": "Anglais",
+            "en": "English"
+        },
+        {
+            "id": "french",
+            "fr": "Français",
+            "en": "French"
+        },
+        {
+            "id": "chinese",
+            "fr": "Chinois",
+            "en": "Chinese"
+        },
+        {
+            "id": "russian",
+            "fr": "Russe",
+            "en": "Russian"
+        },
+        {
+            "id": "education",
+            "fr": "Éducation",
+            "en": "Education"
+        },
+        {
+            "id": "business",
+            "fr": "Gestion d'entreprise",
+            "en": "Business"
+        },
+        {
+            "id": "job_search",
+            "fr": "Recherche d'emploi",
+            "en": "Job Search"
+        },
+        {
+            "id": "math",
+            "fr": "Mathématiques",
+            "en": "Mathematics"
+        },
+        {
+            "id": "chemistry",
+            "fr": "Chimie",
+            "en": "Chemistry"
+        },
+        {
+            "id": "biology",
+            "fr": "Biologie",
+            "en": "Biology"
+        },
+        {
+            "id": "geology",
+            "fr": "Géologie",
+            "en": "Geology"
+        },
+        {
+            "id": "history",
+            "fr": "Histoire",
+            "en": "History"
+        },
+        {
+            "id": "geography",
+            "fr": "Géographie",
+            "en": "Geography"
+        },
+        {
+            "id": "youtube_channel",
+            "fr": "Chaînes YouTube",
+            "en": "YouTube Channels"
+        },
+        {
+            "id": "linkedin_profile",
+            "fr": "Profils LinkedIn",
+            "en": "LinkedIn Profiles"
+        },
+        {
+            "id": "online_courses",
+            "fr": "Cours en ligne",
+            "en": "Online Courses"
+        },
+        {
+            "id": "website",
+            "fr": "Sites internet",
+            "en": "Websites"
+        }
+    ],
+    "heroVideos": [
+        "https://ahp.li/f224b42525ebce2f8855.mp4",
+        "https://ahp.li/00c01c2b42e0602f72af.mp4",
+        "https://ahp.li/f38c9b1dabdb9bbdd749.mp4",
+        "https://ahp.li/995e9739a9857e93e8e9.mp4",
+        "https://ahp.li/a0f01810ea3282b17a33.mp4",
+        "https://ahp.li/e231e7bf2947eec4eb58.mp4",
+        "https://ahp.li/2243953c37c7d2cb3956.mp4"
+    ],
+    "taxonomy": [
+        {
+            "id": "math",
+            "fr": "Mathématiques",
+            "en": "Mathematics",
+            "children": []
+        },
+        {
+            "id": "chemistry",
+            "fr": "Chimie",
+            "en": "Chemistry",
+            "children": []
+        },
+        {
+            "id": "earth_life_sciences",
+            "fr": "Sciences de la Terre et du Vivant",
+            "en": "Earth and Life Sciences",
+            "children": [
+                {
+                    "id": "biology",
+                    "fr": "Biologie",
+                    "en": "Biology"
+                },
+                {
+                    "id": "geology",
+                    "fr": "Géologie",
+                    "en": "Geology"
+                }
+            ]
+        },
+        {
+            "id": "history_geography",
+            "fr": "Histoire et Géographie",
+            "en": "History and Geography",
+            "children": [
+                {
+                    "id": "history",
+                    "fr": "Histoire",
+                    "en": "History"
+                },
+                {
+                    "id": "geography",
+                    "fr": "Géographie",
+                    "en": "Geography"
+                }
+            ]
+        },
+        {
+            "id": "useful_resources",
+            "fr": "Ressources utiles",
+            "en": "Useful Resources",
+            "children": [
+                {
+                    "id": "youtube_channel",
+                    "fr": "Chaînes YouTube",
+                    "en": "YouTube Channels"
+                },
+                {
+                    "id": "linkedin_profile",
+                    "fr": "Profils LinkedIn",
+                    "en": "LinkedIn Profiles"
+                },
+                {
+                    "id": "online_courses",
+                    "fr": "Cours en ligne",
+                    "en": "Online Courses"
+                },
+                {
+                    "id": "website",
+                    "fr": "Sites internet",
+                    "en": "Websites"
+                }
+            ]
+        },
+        {
+            "id": "electronics",
+            "fr": "Électronique",
+            "en": "Electronics",
+            "children": [
+                {
+                    "id": "iot",
+                    "fr": "IoT (Internet des Objets)",
+                    "en": "IoT (Internet of Things)"
+                },
+                {
+                    "id": "semiconductors",
+                    "fr": "Semi-conducteurs",
+                    "en": "Semi-conductors"
+                },
+                {
+                    "id": "wireless",
+                    "fr": "Wireless (sans fil)",
+                    "en": "Wireless"
+                },
+                {
+                    "id": "telecoms",
+                    "fr": "Télécoms",
+                    "en": "Telecoms"
+                },
+                {
+                    "id": "5g",
+                    "fr": "5G",
+                    "en": "5G"
+                }
+            ]
+        },
+        {
+            "id": "robotics",
+            "fr": "Robotique",
+            "en": "Robotics",
+            "children": [
+                {
+                    "id": "humanoids",
+                    "fr": "Humanoïdes",
+                    "en": "Humanoids"
+                },
+                {
+                    "id": "ros2",
+                    "fr": "ROS2",
+                    "en": "ROS2"
+                },
+                {
+                    "id": "rust",
+                    "fr": "Rust",
+                    "en": "Rust"
+                },
+                {
+                    "id": "python",
+                    "fr": "Python",
+                    "en": "Python"
+                }
+            ]
+        },
+        {
+            "id": "programming",
+            "fr": "Programmation",
+            "en": "Programming",
+            "children": [
+                {
+                    "id": "html",
+                    "fr": "HTML",
+                    "en": "HTML"
+                },
+                {
+                    "id": "css",
+                    "fr": "CSS",
+                    "en": "CSS"
+                },
+                {
+                    "id": "javascript",
+                    "fr": "JavaScript",
+                    "en": "JavaScript"
+                },
+                {
+                    "id": "typescript",
+                    "fr": "TypeScript",
+                    "en": "TypeScript"
+                },
+                {
+                    "id": "rust",
+                    "fr": "Rust",
+                    "en": "Rust"
+                },
+                {
+                    "id": "python",
+                    "fr": "Python",
+                    "en": "Python"
+                },
+                {
+                    "id": "c_lang",
+                    "fr": "C",
+                    "en": "C"
+                },
+                {
+                    "id": "ai",
+                    "fr": "IA",
+                    "en": "AI"
+                }
+            ]
+        },
+        {
+            "id": "3d",
+            "fr": "Création 3D",
+            "en": "3D Creation",
+            "children": [
+                {
+                    "id": "blender",
+                    "fr": "Blender",
+                    "en": "Blender"
+                },
+                {
+                    "id": "unreal_engine",
+                    "fr": "Unreal Engine",
+                    "en": "Unreal Engine"
+                },
+                {
+                    "id": "unity3d",
+                    "fr": "Unity3D",
+                    "en": "Unity3D"
+                },
+                {
+                    "id": "godot",
+                    "fr": "Godot",
+                    "en": "Godot"
+                },
+                {
+                    "id": "3d_ai",
+                    "fr": "3D AI",
+                    "en": "3D AI"
+                }
+            ]
+        },
+        {
+            "id": "technologies",
+            "fr": "Technologie",
+            "en": "Technology",
+            "children": [
+                {
+                    "id": "transport",
+                    "fr": "Transport",
+                    "en": "Transport",
+                    "children": [
+                        {
+                            "id": "mechanics",
+                            "fr": "Mécanique",
+                            "en": "Mechanics"
+                        },
+                        {
+                            "id": "boats",
+                            "fr": "Bateaux",
+                            "en": "Boats"
+                        },
+                        {
+                            "id": "aviation",
+                            "fr": "Aviation",
+                            "en": "Aviation"
+                        },
+                        {
+                            "id": "automobile",
+                            "fr": "Automobile",
+                            "en": "Automobile"
+                        }
+                    ]
+                },
+                {
+                    "id": "space",
+                    "fr": "Spatiale",
+                    "en": "Space",
+                    "children": [
+                        {
+                            "id": "rockets",
+                            "fr": "Fusées",
+                            "en": "Rockets"
+                        },
+                        {
+                            "id": "satellites",
+                            "fr": "Satellites",
+                            "en": "Satellites"
+                        },
+                        {
+                            "id": "space_exploration",
+                            "fr": "Exploration spatiale",
+                            "en": "Space Exploration"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "physics",
+            "fr": "Physique",
+            "en": "Physics",
+            "children": [
+                {
+                    "id": "waves",
+                    "fr": "Ondes",
+                    "en": "Waves"
+                },
+                {
+                    "id": "mechanics",
+                    "fr": "Mécanique",
+                    "en": "Mechanics"
+                },
+                {
+                    "id": "thermodynamics",
+                    "fr": "Thermodynamique",
+                    "en": "Thermodynamics"
+                },
+                {
+                    "id": "science_history",
+                    "fr": "Histoire des sciences",
+                    "en": "History of Science"
+                },
+                {
+                    "id": "quantum_physics",
+                    "fr": "Physique quantique",
+                    "en": "Quantum Physics"
+                },
+                {
+                    "id": "relativity",
+                    "fr": "Relativité",
+                    "en": "Relativity"
+                }
+            ]
+        },
+        {
+            "id": "biology",
+            "fr": "Biologie",
+            "en": "Biology",
+            "children": [
+                {
+                    "id": "biology_cell",
+                    "fr": "Biologie cellulaire",
+                    "en": "Cell Biology"
+                },
+                {
+                    "id": "medicine",
+                    "fr": "Médecine",
+                    "en": "Medicine"
+                },
+                {
+                    "id": "health",
+                    "fr": "Santé",
+                    "en": "Health"
+                }
+            ]
+        },
+        {
+            "id": "ai_art",
+            "fr": "AI Art",
+            "en": "AI Art",
+            "children": [
+                {
+                    "id": "image_gen",
+                    "fr": "Génération d'images",
+                    "en": "Image Generation"
+                },
+                {
+                    "id": "video_ai",
+                    "fr": "Vidéo par IA",
+                    "en": "Video AI"
+                },
+                {
+                    "id": "3d_ai",
+                    "fr": "3D par IA",
+                    "en": "3D AI"
+                },
+                {
+                    "id": "comfyui",
+                    "fr": "ComfyUI",
+                    "en": "ComfyUI"
+                }
+            ]
+        },
+        {
+            "id": "languages",
+            "fr": "Langues",
+            "en": "Languages",
+            "children": [
+                {
+                    "id": "english",
+                    "fr": "Anglais",
+                    "en": "English"
+                },
+                {
+                    "id": "french",
+                    "fr": "Français",
+                    "en": "French"
+                },
+                {
+                    "id": "chinese",
+                    "fr": "Chinois",
+                    "en": "Chinese"
+                },
+                {
+                    "id": "russian",
+                    "fr": "Russe",
+                    "en": "Russian"
+                }
+            ]
+        },
+        {
+            "id": "management",
+            "fr": "Management",
+            "en": "Management",
+            "children": [
+                {
+                    "id": "education",
+                    "fr": "Éducation",
+                    "en": "Education"
+                },
+                {
+                    "id": "business",
+                    "fr": "Gestion d'entreprise",
+                    "en": "Business"
+                },
+                {
+                    "id": "job_search",
+                    "fr": "Recherche d'emploi",
+                    "en": "Job Search"
+                }
+            ]
+        }
+    ]
+}

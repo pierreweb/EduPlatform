@@ -1,0 +1,43 @@
+.media-embed-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.audio-toggle-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 100;
+    /* Higher z-index to stay on top */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    /* Use primary color for high visibility */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 0;
+    border: 3px solid white;
+    /* White border to separate from frame elements */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.audio-toggle-btn:hover {
+    background: var(--color-gray-900);
+    transform: scale(1.15) rotate(5deg);
+}
+
+.audio-toggle-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Ensure the organic frame overflow doesn't hide the button 
+   if the button is outside the 40/60/etc border area.
+   In case of Hero, .video-frame-organic has overflow: hidden.
+   We might need to adjust the button position or the container.
+*/
