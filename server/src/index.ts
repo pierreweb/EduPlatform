@@ -4,7 +4,8 @@ import { applySecurityMiddleware } from './middleware/security';
 import itemsRouter from './routes/items';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+
+const port = Number(process.env.PORT) || 3000;
 
 // Apply security middleware
 applySecurityMiddleware(app);
@@ -50,4 +51,5 @@ app.listen(port, "0.0.0.0", () => {
     console.log(`   POST /api/items`);
     console.log(`📁 Static files: ${webDistPath}`);
 });
+
 
