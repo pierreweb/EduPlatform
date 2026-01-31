@@ -44,12 +44,13 @@ app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
 // Start server
 app.listen(port, "0.0.0.0", () => {
      console.log(`API listening on ${port}`);
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
+    console.log(`🚀 Server running on http://localhost:${port}`);
     console.log(`📋 API endpoints:`);
     console.log(`   GET  /health`);
     console.log(`   GET  /api/items`);
     console.log(`   POST /api/items`);
     console.log(`📁 Static files: ${webDistPath}`);
 });
+
 
 
