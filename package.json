@@ -1,13 +1,19 @@
 {
-    "name": "eduplatform-root",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "build": "npm run build --prefix web && npm run build --prefix server",
-        "start": "npm run start --prefix server"
-    }
-      "engines": {
+  "name": "eduplatform-root",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
     "node": ">=20 <25"
+  },
+  "scripts": {
+    "postinstall": "npm ci --prefix web && npm ci --prefix server",
+    "build": "npm run build --prefix web && npm run build --prefix server",
+    "start": "npm run start --prefix server"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
   }
-
 }
