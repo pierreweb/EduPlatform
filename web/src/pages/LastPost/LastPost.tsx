@@ -2,7 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../../context/LanguageContext'
 import MediaEmbed from '../../components/MediaEmbed'
+import { Item } from '../../types'
 import './LastPost.css'
+
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 function LastPost() {
     const [item, setItem] = useState<Item | null>(null)
