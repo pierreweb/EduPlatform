@@ -8,7 +8,9 @@
   "scripts": {
     "postinstall": "npm ci --prefix web && npm ci --prefix server && echo ROOT_POSTINSTALL_DONE",
     "build": "npm run build --prefix web && echo ROOT_WEB_BUILD_DONE && npm run build --prefix server && echo ROOT_SERVER_BUILD_DONE",
-    "start": "echo ROOT_STARTING_SERVER && npm run start --prefix server"
+    
+    "start": "node -v && echo ROOT_STARTING_SERVER && npm run start --prefix server"
+
   },
   "dependencies": {
     "express": "^4.19.2"
@@ -16,4 +18,5 @@
   "devDependencies": {
     "vite": "^5.4.0"
   }
+
 }
