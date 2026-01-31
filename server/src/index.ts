@@ -1,4 +1,5 @@
 import express, { Request, Response, NextFunction } from 'express';
+import path from 'path';
 import { applySecurityMiddleware } from './middleware/security';
 import itemsRouter from './routes/items';
 
@@ -19,9 +20,18 @@ app.get('/health', (_req: Request, res: Response) => {
 // API routes
 app.use('/api/items', itemsRouter);
 
-// 404 handler
-app.use((_req: Request, res: Response) => {
-    res.status(404).json({ error: 'Not found' });
+// Serve static files from web/dist in production
+const webDistPath = path.join(__dirname, '../../web/dist');
+app.use(express.static(webDistPath));
+
+// SPA fallback - serve index.html for all non-API routes
+app.get('*', (_req: Request, res: Response) => {
+    const indexPath = path.join(webDistPath, 'index.html');
+    res.sendFile(indexPath, (err: Error | null) => {
+        if (err) {
+            res.status(404).json({ error: 'Not found' });
+        }
+    });
 });
 
 // Error handler
@@ -37,4 +47,5 @@ app.listen(PORT, () => {
     console.log(`   GET  /health`);
     console.log(`   GET  /api/items`);
     console.log(`   POST /api/items`);
+    console.log(`📁 Static files: ${webDistPath}`);
 });
