@@ -41,7 +41,8 @@ app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(port, "0.0.0.0", () => {
+     console.log(`API listening on ${port}`);
     console.log(`🚀 Server running on http://localhost:${PORT}`);
     console.log(`📋 API endpoints:`);
     console.log(`   GET  /health`);
@@ -49,3 +50,4 @@ app.listen(PORT, () => {
     console.log(`   POST /api/items`);
     console.log(`📁 Static files: ${webDistPath}`);
 });
+
